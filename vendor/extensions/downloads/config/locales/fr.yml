@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      downloads:
+        title: Downloads
+    downloads:
+      admin:
+        downloads:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Download
+            reorder: Réordonner les Downloads
+            reorder_done: Fin de réordonnancement des Downloads
+          records:
+            title: Downloads
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Download. Cliquer sur "Créer un(e) nouve(au/l/lle) Download" pour créer votre premi(er/ère) download.'
+          download:
+            view_live_html: Voir ce(t/tte) download <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) download
+            delete: Supprimer définitivement ce(t/tte) download
+      downloads:
+        show:
+          other: Autres Downloads
+  activerecord:
+    attributes:
+      'refinery/downloads/download':
+        categoy: Categoy
+        description: Description

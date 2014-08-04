@@ -1,0 +1,28 @@
+it:
+  refinery:
+    plugins:
+      downloads:
+        title: Downloads
+    downloads:
+      admin:
+        downloads:
+          actions:
+            create_new: Aggiungi Nuovo Download
+            reorder: Riordina Downloads
+            reorder_done: Termina il Riordino di Downloads
+          records:
+            title: Downloads
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Downloads. Clicca "Aggiungi Nuovo Download" per aggiungere il tuo primo download.
+          download:
+            view_live_html: Guarda live questo download <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo download
+            delete: Rimuovi per sempre questo download
+      downloads:
+        show:
+          other: Altri Downloads
+  activerecord:
+    attributes:
+      'refinery/downloads/download':
+        categoy: Categoy
+        description: Description

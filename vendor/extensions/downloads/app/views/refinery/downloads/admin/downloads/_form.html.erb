@@ -1,0 +1,30 @@
+<%= form_for [refinery, :downloads_admin, @download] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @download,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :categoy -%>
+    <%= f.text_field :categoy, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "downloads/download" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.downloads.admin.downloads.download'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @download.categoy) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

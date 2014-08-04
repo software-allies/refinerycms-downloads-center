@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      downloads:
+        title: Downloads
+#        article: masculino/femenino
+    downloads:
+      admin:
+        downloads:
+          actions:
+            create_new: Crear nuevo download
+            reorder: Reordenar downloads
+            reorder_done: Reordenación de downloads completada
+          records:
+            title: Downloads
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay downloads todavía. Pulsa en "Crear nuevo Download" para crear tu primer download.
+          download:
+            view_live_html: Ver este download como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este download
+            delete: Borrar este download para siempre
+      downloads:
+        show:
+          other: Otros downloads
+  activerecord:
+    attributes:
+      'refinery/downloads/download':
+        categoy: Categoy
+        description: Description

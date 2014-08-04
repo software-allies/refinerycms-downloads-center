@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      downloads:
+        title: Downloads
+    downloads:
+      admin:
+        downloads:
+          actions:
+            create_new: Yeni Ekle Download
+            reorder: Tekrar sirala Downloads
+            reorder_done: Tekrar siralama tamamlandiDownloads
+          records:
+            title: Downloads
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Downloads yok henuz.  Tikla "Yeni Ekle Download" eklemek senin ilk download.
+          download:
+            view_live_html: Bunu canlu download goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle download
+            delete: Bunu Sil download sonsuza dek
+      downloads:
+        show:
+          other: Diger Downloads
+  activerecord:
+    attributes:
+      'refinery/downloads/download':
+        categoy: Categoy
+        description: Description
