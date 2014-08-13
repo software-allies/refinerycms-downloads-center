@@ -1,0 +1,76 @@
+sk:
+  refinery:
+    plugins:
+      subcategories:
+        title: Subcategories
+      downloads:
+        title: Downloads
+      categories:
+        title: Categories
+    categories:
+      admin:
+        subcategories:
+          actions:
+            create_new: Pridať Subcategory
+            reorder: Preusporiadať Subcategories
+            reorder_done: Koniec radenia Subcategories
+          records:
+            title: Subcategories
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Subcategories. Kliknite na "Pridať
+              Subcategory" pre pridanie prvého subcategory.
+          subcategory:
+            view_live_html: Zobraziť náhľad subcategory<br/><em>(otvorí sa v novom
+              okne)</em>
+            edit: Upraviť subcategory
+            delete: Zmazať subcategory
+        downloads:
+          actions:
+            create_new: Pridať Download
+            reorder: Preusporiadať Downloads
+            reorder_done: Koniec radenia Downloads
+          records:
+            title: Downloads
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Downloads. Kliknite na "Pridať Download"
+              pre pridanie prvého download.
+          download:
+            view_live_html: Zobraziť náhľad download<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť download
+            delete: Zmazať download
+        categories:
+          actions:
+            create_new: Pridať Category
+            reorder: Preusporiadať Categories
+            reorder_done: Koniec radenia Categories
+          records:
+            title: Categories
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Categories. Kliknite na "Pridať
+              Category" pre pridanie prvého category.
+          category:
+            view_live_html: Zobraziť náhľad category<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť category
+            delete: Zmazať category
+      subcategories:
+        show:
+          other: Daľšie Subcategories
+      downloads:
+        show:
+          other: Daľšie Downloads
+      categories:
+        show:
+          other: Daľšie Categories
+  activerecord:
+    attributes:
+      refinery/categories/subcategory:
+        title: Title
+        description: Description
+      refinery/categories/download:
+        title: Title
+        description: Description
+        picture: Picture
+        file: File
+      refinery/categories/category:
+        title: Title
+        description: Description

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="subcategories">
+    <% @subcategories.each do |subcategory| %>
+      <li>
+        <%= link_to subcategory.title, refinery.categories_subcategory_path(subcategory) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

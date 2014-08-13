@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Categories::Admin::DownloadsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.categories_admin_downloads_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_categories_admin_download_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Categories::Admin::DownloadsController.sortable? && ::Refinery::Categories::Download.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Downloads"),
+                 refinery.categories_admin_downloads_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Downloads"),
+                 refinery.categories_admin_downloads_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

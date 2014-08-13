@@ -1,0 +1,28 @@
+<% content_for :body do %>
+  <ul id="categories">
+    <% @categories.each do |category| %>
+      
+        <li> 
+
+          <h1><%= category.title %><h1>
+      	  <ul class="subcategories">
+
+	      	  <% category.subcategories.each do |subcategory| %>
+		      	<li>
+		      	  <h2><%= subcategory.title %></h2>
+			      <div>
+			      	<% subcategory.downloads.each do |download|%>
+				      	<span>
+				      		<%= link_to image_fu( download.picture, "200x200"), download.file.url %>
+				      	</span>
+			      	<% end %>
+			      </div>
+			  	</li>
+		      <% end %>
+	  	  </ul>
+	  	</li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

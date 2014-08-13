@@ -1,0 +1,72 @@
+zh-CN:
+  refinery:
+    plugins:
+      subcategories:
+        title: Subcategories
+      downloads:
+        title: Downloads
+      categories:
+        title: Categories
+    categories:
+      admin:
+        subcategories:
+          actions:
+            create_new: 建立新的 Subcategory
+            reorder: 对 Subcategories 重新排序
+            reorder_done: 对 Subcategories 的重新排序结束
+          records:
+            title: Subcategories
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Subcategories . 点击 "Add New Subcategory" 创建一个subcategory.
+          subcategory:
+            view_live_html: 查看 subcategory 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 subcategory
+            delete: 永久删除 subcategory
+        downloads:
+          actions:
+            create_new: 建立新的 Download
+            reorder: 对 Downloads 重新排序
+            reorder_done: 对 Downloads 的重新排序结束
+          records:
+            title: Downloads
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Downloads . 点击 "Add New Download" 创建一个download.
+          download:
+            view_live_html: 查看 download 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 download
+            delete: 永久删除 download
+        categories:
+          actions:
+            create_new: 建立新的 Category
+            reorder: 对 Categories 重新排序
+            reorder_done: 对 Categories 的重新排序结束
+          records:
+            title: Categories
+            sorry_no_results: 对不起，未找到结果。
+            no_items_yet: 目前没有 Categories . 点击 "Add New Category" 创建一个category.
+          category:
+            view_live_html: 查看 category 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 category
+            delete: 永久删除 category
+      subcategories:
+        show:
+          other: 其他 Subcategories
+      downloads:
+        show:
+          other: 其他 Downloads
+      categories:
+        show:
+          other: 其他 Categories
+  activerecord:
+    attributes:
+      refinery/categories/subcategory:
+        title: Title
+        description: Description
+      refinery/categories/download:
+        title: Title
+        description: Description
+        picture: Picture
+        file: File
+      refinery/categories/category:
+        title: Title
+        description: Description

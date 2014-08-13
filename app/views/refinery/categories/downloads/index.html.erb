@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="downloads">
+    <% @downloads.each do |download| %>
+      <li>
+        <%= link_to download.title, refinery.categories_download_path(download) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

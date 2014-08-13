@@ -1,0 +1,77 @@
+en:
+  refinery:
+    plugins:
+      subcategories:
+        title: Subcategories
+      downloads:
+        title: Downloads
+      categories:
+        title: Dowload Center
+    categories:
+      admin:
+        subcategories:
+          actions:
+            create_new: Add New Subcategory
+            reorder: Reorder Subcategories
+            reorder_done: Done Reordering Subcategories
+          records:
+            title: Subcategories
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Subcategories yet. Click "Add New Subcategory"
+              to add your first subcategory.
+          subcategory:
+            view_live_html: View this subcategory live <br/><em>(opens in a new window)</em>
+            edit: Edit this subcategory
+            delete: Remove this subcategory forever
+            add: Add a new Download to this subcategory
+        downloads:
+          actions:
+            create_new: Add New Download
+            reorder: Reorder Downloads
+            reorder_done: Done Reordering Downloads
+          records:
+            title: Downloads
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Downloads yet. Click "Add New Download" to
+              add your first download.
+          download:
+            view_live_html: View this download live <br/><em>(opens in a new window)</em>
+            edit: Edit this download
+            delete: Remove this download forever
+        categories:
+          actions:
+            create_new: Add New Category
+            reorder: Reorder Categories
+            reorder_done: Done Reordering Categories
+          records:
+            title: Categories
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Categories yet. Click "Add New Category" to
+              add your first category.
+          category:
+            view_live_html: View this category live <br/><em>(opens in a new window)</em>
+            edit: Edit this category
+            delete: Remove this category forever
+            add: Add a new Subcategory to this category
+      subcategories:
+        show:
+          other: Other Subcategories
+      downloads:
+        show:
+          other: Other Downloads
+      categories:
+        show:
+          other: Other Categories
+  activerecord:
+    attributes:
+      refinery/categories/subcategory:
+        title: Title
+        description: Description
+      refinery/categories/download:
+        title: Title
+        description: Description
+        picture: Picture
+        file: File
+      refinery/categories/category:
+        title: Title
+        description: Description

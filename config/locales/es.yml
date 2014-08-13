@@ -1,0 +1,78 @@
+es:
+  refinery:
+    plugins:
+      subcategories:
+        title: Subcategories
+      downloads:
+        title: Downloads
+      categories:
+        title: Categories
+    categories:
+      admin:
+        subcategories:
+          actions:
+            create_new: Crear nuevo subcategory
+            reorder: Reordenar subcategories
+            reorder_done: Reordenación de subcategories completada
+          records:
+            title: Subcategories
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay subcategories todavía. Pulsa en "Crear nuevo Subcategory"
+              para crear tu primer subcategory.
+          subcategory:
+            view_live_html: Ver este subcategory como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este subcategory
+            delete: Borrar este subcategory para siempre
+        downloads:
+          actions:
+            create_new: Crear nuevo download
+            reorder: Reordenar downloads
+            reorder_done: Reordenación de downloads completada
+          records:
+            title: Downloads
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay downloads todavía. Pulsa en "Crear nuevo Download"
+              para crear tu primer download.
+          download:
+            view_live_html: Ver este download como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este download
+            delete: Borrar este download para siempre
+        categories:
+          actions:
+            create_new: Crear nuevo category
+            reorder: Reordenar categories
+            reorder_done: Reordenación de categories completada
+          records:
+            title: Categories
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay categories todavía. Pulsa en "Crear nuevo Category"
+              para crear tu primer category.
+          category:
+            view_live_html: Ver este category como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este category
+            delete: Borrar este category para siempre
+      subcategories:
+        show:
+          other: Otros subcategories
+      downloads:
+        show:
+          other: Otros downloads
+      categories:
+        show:
+          other: Otros categories
+  activerecord:
+    attributes:
+      refinery/categories/subcategory:
+        title: Title
+        description: Description
+      refinery/categories/download:
+        title: Title
+        description: Description
+        picture: Picture
+        file: File
+      refinery/categories/category:
+        title: Title
+        description: Description

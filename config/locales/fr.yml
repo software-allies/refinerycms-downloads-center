@@ -1,0 +1,77 @@
+fr:
+  refinery:
+    plugins:
+      subcategories:
+        title: Subcategories
+      downloads:
+        title: Downloads
+      categories:
+        title: Categories
+    categories:
+      admin:
+        subcategories:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Subcategory
+            reorder: Réordonner les Subcategories
+            reorder_done: Fin de réordonnancement des Subcategories
+          records:
+            title: Subcategories
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Subcategory. Cliquer sur
+              "Créer un(e) nouve(au/l/lle) Subcategory" pour créer votre premi(er/ère)
+              subcategory.
+          subcategory:
+            view_live_html: Voir ce(t/tte) subcategory <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) subcategory
+            delete: Supprimer définitivement ce(t/tte) subcategory
+        downloads:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Download
+            reorder: Réordonner les Downloads
+            reorder_done: Fin de réordonnancement des Downloads
+          records:
+            title: Downloads
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Download. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Download" pour créer votre premi(er/ère) download.
+          download:
+            view_live_html: Voir ce(t/tte) download <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) download
+            delete: Supprimer définitivement ce(t/tte) download
+        categories:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Category
+            reorder: Réordonner les Categories
+            reorder_done: Fin de réordonnancement des Categories
+          records:
+            title: Categories
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Category. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Category" pour créer votre premi(er/ère) category.
+          category:
+            view_live_html: Voir ce(t/tte) category <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) category
+            delete: Supprimer définitivement ce(t/tte) category
+      subcategories:
+        show:
+          other: Autres Subcategories
+      downloads:
+        show:
+          other: Autres Downloads
+      categories:
+        show:
+          other: Autres Categories
+  activerecord:
+    attributes:
+      refinery/categories/subcategory:
+        title: Title
+        description: Description
+      refinery/categories/download:
+        title: Title
+        description: Description
+        picture: Picture
+        file: File
+      refinery/categories/category:
+        title: Title
+        description: Description

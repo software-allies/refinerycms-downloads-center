@@ -1,0 +1,78 @@
+nb:
+  refinery:
+    plugins:
+      subcategories:
+        title: Subcategories
+      downloads:
+        title: Downloads
+      categories:
+        title: Categories
+    categories:
+      admin:
+        subcategories:
+          actions:
+            create_new: Lag en ny Subcategory
+            reorder: Endre rekkefølgen på Subcategories
+            reorder_done: Ferdig å endre rekkefølgen Subcategories
+          records:
+            title: Subcategories
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Subcategories enda. Klikk på "Lag en ny Subcategory"
+              for å legge til din første subcategory.
+          subcategory:
+            view_live_html: Vis hvordan denne subcategory ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne subcategory
+            delete: Fjern denne subcategory permanent
+        downloads:
+          actions:
+            create_new: Lag en ny Download
+            reorder: Endre rekkefølgen på Downloads
+            reorder_done: Ferdig å endre rekkefølgen Downloads
+          records:
+            title: Downloads
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Downloads enda. Klikk på "Lag en ny Download"
+              for å legge til din første download.
+          download:
+            view_live_html: Vis hvordan denne download ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne download
+            delete: Fjern denne download permanent
+        categories:
+          actions:
+            create_new: Lag en ny Category
+            reorder: Endre rekkefølgen på Categories
+            reorder_done: Ferdig å endre rekkefølgen Categories
+          records:
+            title: Categories
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Categories enda. Klikk på "Lag en ny Category"
+              for å legge til din første category.
+          category:
+            view_live_html: Vis hvordan denne category ser ut offentlig <br/><em>(åpner
+              i et nytt vindu)</em>
+            edit: Rediger denne category
+            delete: Fjern denne category permanent
+      subcategories:
+        show:
+          other: Andre Subcategories
+      downloads:
+        show:
+          other: Andre Downloads
+      categories:
+        show:
+          other: Andre Categories
+  activerecord:
+    attributes:
+      refinery/categories/subcategory:
+        title: Title
+        description: Description
+      refinery/categories/download:
+        title: Title
+        description: Description
+        picture: Picture
+        file: File
+      refinery/categories/category:
+        title: Title
+        description: Description

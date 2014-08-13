@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Categories::Admin::SubcategoriesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.categories_admin_subcategories_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_categories_admin_subcategory_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Categories::Admin::SubcategoriesController.sortable? && ::Refinery::Categories::Subcategory.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Subcategories"),
+                 refinery.categories_admin_subcategories_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Subcategories"),
+                 refinery.categories_admin_subcategories_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>
