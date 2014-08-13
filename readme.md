@@ -1,4 +1,4 @@
-# Categories extension for Refinery CMS.
+# Download center extension for Refinery CMS.
 
 ## How to build this extension as a gem
 
@@ -6,5 +6,15 @@
     gem build refinerycms-categories.gemspec
     gem install refinerycms-categories.gem
 
-    # Sign up for a http://rubygems.org/ account and publish the gem
-    gem push refinerycms-categories.gem
+## How to install this extension in refinery
+
+add the next line to the Gemfile
+
+    gem 'refinerycms-categories', git: "https://github.com/software-allies/refinerycms-downloads-center.git"
+
+and run the next lines in console
+
+    rails generate refinery:categories
+    rake db:migrate
+    rake db:seed
+    rails s
