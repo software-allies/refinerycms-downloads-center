@@ -7,8 +7,10 @@ module Refinery
       acts_as_indexed :fields => [:title, :description]
 
       validates :title, :presence => true, :uniqueness => true
+      validates :category_id, :presence => true
 
       belongs_to :category
+      
       has_many :downloads
     end
   end

@@ -8,6 +8,8 @@ module Refinery
 
       validates :title, :presence => true, :uniqueness => true
 
+      validates :subcategory_id, :presence => true
+
       belongs_to :picture, :class_name => '::Refinery::Image'
 
       belongs_to :file, :class_name => '::Refinery::Resource'

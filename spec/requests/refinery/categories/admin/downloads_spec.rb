@@ -7,10 +7,15 @@ describe Refinery do
       describe "downloads" do
         login_refinery_user
 
+        before do 
+            @cat=FactoryGirl.create(:category, :title => "Refinery cat", :description => "Refinery desc")
+            @subcat=FactoryGirl.create(:subcategory, :title => "Refinery subcat", :description => "Refinery desc", :category_id=>@cat.id)          
+        end
+
         describe "downloads list" do
           before do
-            FactoryGirl.create(:download, :title => "UniqueTitleOne")
-            FactoryGirl.create(:download, :title => "UniqueTitleTwo")
+            FactoryGirl.create(:download, :title => "UniqueTitleOne", :subcategory_id => @subcat.id)
+            FactoryGirl.create(:download, :title => "UniqueTitleTwo", :subcategory_id => @subcat.id)
           end
 
           it "shows two items" do
@@ -22,9 +27,9 @@ describe Refinery do
 
         describe "create" do
           before do
-            visit refinery.categories_admin_downloads_path
+            visit refinery.categories_admin_downloads_path+"/new?id="+@subcat.id.to_s
 
-            click_link "Add New Download"
+            #click_link "Add New Download"
           end
 
           context "valid data" do
@@ -47,12 +52,12 @@ describe Refinery do
           end
 
           context "duplicate" do
-            before { FactoryGirl.create(:download, :title => "UniqueTitle") }
+            before do
+                FactoryGirl.create(:download, :title => "UniqueTitle", :subcategory_id => @subcat.id)
+                visit refinery.categories_admin_downloads_path+"/new?id="+@subcat.id.to_s                
+            end
 
             it "should fail" do
-              visit refinery.categories_admin_downloads_path
-
-              click_link "Add New Download"
 
               fill_in "Title", :with => "UniqueTitle"
               click_button "Save"
@@ -65,7 +70,9 @@ describe Refinery do
         end
 
         describe "edit" do
-          before { FactoryGirl.create(:download, :title => "A title") }
+          before do
+              FactoryGirl.create(:download, :title => "A Title", :subcategory_id => @subcat.id)
+          end
 
           it "should succeed" do
             visit refinery.categories_admin_downloads_path
@@ -83,14 +90,16 @@ describe Refinery do
         end
 
         describe "destroy" do
-          before { FactoryGirl.create(:download, :title => "UniqueTitleOne") }
+          before do
+              FactoryGirl.create(:download, :title => "A Title one", :subcategory_id => @subcat.id)            
+          end
 
           it "should succeed" do
             visit refinery.categories_admin_downloads_path
 
             click_link "Remove this download forever"
 
-            page.should have_content("'UniqueTitleOne' was successfully removed.")
+            page.should have_content("'A Title one' was successfully removed.")
             Refinery::Categories::Download.count.should == 0
           end
         end
